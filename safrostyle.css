@@ -1,0 +1,88 @@
+/* =========================
+   Safrochain Stylesheet
+   ========================= */
+
+:root {
+  --primary-color: #0f9d58;
+  --secondary-color: #0a2540;
+  --accent-color: #22c55e;
+  --text-color: #1f2937;
+  --bg-color: #f9fafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+.header span {
+  color: var(--primary-color);
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  padding-left: 25px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
